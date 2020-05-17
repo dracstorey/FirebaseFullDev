@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>My Online Library</h1>
+  <div id="wrapper">
+    <div id="header">
+      <div id="left-head">     
+        <img src="images/lib.jpg" height="70px">
+      </div><!--/#left head-->
+
+      <div id="right-head">
+        <ul>
+        <li id="sign-up" onclick='showsignup()'>Sign Up</li> 
+        <li id="log-in" onclick='showlogin()'>Log in </li> 
+        <li id="log-out">Log out</li> 
+        </ul>
+      </div><!--/#right head-->
+      <div class="clearme"></div>
+    </div><!--/#header-->
+
+    <div id="container">
+      <div id = "content">
+        <form id="add-book-form">
+        <input type="text" name="title" placeholder="book title">
+        <input type="text" name="author" placeholder="book author">
+        <button> Add Book</button>
+        </form>
+        <ul id="book-list"></ul>
+      </div> <!--/#content-->
+
+      <div style='text-align:center' id = "login">
+        <h2> Log In </h2>
+        <form id="login-form">
+          <input type="text" name="login-email" placeholder="email"></br>
+          <input type="text" name="login-password" placeholder="password"></br>
+          <button> Login</button>
+        </form>
+      </div><!--/#login-->
+
+      <div style='text-align:center' id = "signup">
+        <h2> Sign Up </h2>
+        <form id="sign-up-form">
+          <input type="text" name="email" placeholder="email"></br>
+          <input type="text" name="password" placeholder="password"></br>
+          <button> Sign Up</button>
+        </form>
+      </div><!--/#signup-->
+      </div><!--/#container-->
+  </div><!--/#wrapper-->
+
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDW-HwkM6q2uTCDGCky01IgKwzIMxwjfJ4",
+    authDomain: "dc-test-app-249316.firebaseapp.com",
+    databaseURL: "https://dc-test-app-249316.firebaseio.com",
+    projectId: "dc-test-app-249316",
+    storageBucket: "dc-test-app-249316.appspot.com",
+    messagingSenderId: "153771107390",
+    appId: "1:153771107390:web:e902eca1e1c7f07a8fdd6f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const auth= firebase.auth();
+  
+  </script>
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+
+</body>
+</html>

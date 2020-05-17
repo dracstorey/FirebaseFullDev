@@ -1,0 +1,77 @@
+ul{list-style-type:none;padding:0px}
+
+h1{text-align:center}
+
+#content li{padding:5px;font-size:12pt;color:rgb(22, 21, 21);position:relative;border-bottom: 1px solid #363636;height:40px}
+
+#content li span{display:block}
+
+#content li span:nth-child(2){font-size:12pt; margin-top:3px;color:#999}
+
+#content li div{color:red;float:right;margin-right:15px;margin-top:-25px;font-size:14pt}
+
+body {font-family:Candara, Arial;font-size:12pt;color:#003399;background-color:#ADD8E6}
+
+h2 {font-size:16pt;text-align:center}
+
+
+#wrapper {margin:auto;width:40em;padding:5px;}
+
+#left-head {float:left}
+
+
+#right-head{float:right;}
+
+#right-head li {display:inline;margin-left:15px;padding:10px;}
+
+#right-head li:hover {background-color:aqua;}
+
+
+.clearme {clear:both}
+
+input {margin:5px;padding:5px}
+
+#container{z-index:0;
+  position: relative;
+  border: 1px dashed #696;
+  background-color: #cfc;
+  //height:200px;
+}
+
+#content {
+  z-index: 0;
+  //height: 300px;
+  position: absolute;
+  top: 0px;
+  width:40em;
+  border: 1px dashed #696;
+  background-color: rgb(231, 235, 247);
+  left: 0px;
+}
+
+#signup {
+  z-index: 1;
+  display:none;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left:60px;
+  width:500px;
+  border: 1px dashed #696;
+  background-color: rgb(248, 241, 248);
+
+}
+
+  #login {
+  z-index: 1;
+  display:none;
+  height:200px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width:500px;
+  border: 1px dashed #696;
+  background-color: rgb(227, 245, 239);
+ 
+}
+
